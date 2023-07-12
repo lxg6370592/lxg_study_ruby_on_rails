@@ -54,3 +54,22 @@ rails new 项目名称
 rails s -p 4001
 ````
 访问localhost://4001
+
+源文档
+<u>https://www.jianshu.com/p/1aefcb466f7f</u>
+
+## 引入 Bootstrap
+Gemfile添加导入
+````
+gem "bootstrap-sass", "~>3.4.1"
+````
+安装依赖
+````
+bundle install
+````
+application.scss 中导入 bootstrap
+将 app/assets/stylesheets/application.css 重命名为app/assets/stylesheets/application.scss
+添加内容
+````
+@import "bootstrap";
+````
