@@ -27,3 +27,30 @@ bundle config mirror.https://rubygems.org https://gems.ruby-china.com
 ````
 gem sources --remove https://rubygems.org/
 ````
+### 5.4再次查看gem源 确保更换成功
+## 6.安装rails
+````
+gem install rails
+````
+查看rails 版本
+````
+rails -v
+````
+## 7.安装node.js 和 yarn，创建rails项目时需要。
+<u>https://nodejs.org/en</u>
+### 7.1查看命令
+````
+node -v
+yarn -v
+````
+## 8创建项目
+````
+rails new 项目名称
+````
+启动项目
+进入项目目录
+启动命令
+````
+rails s -p 4001
+````
+访问localhost://4001
