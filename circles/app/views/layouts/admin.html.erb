@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Circles</title>
+    <title>Circles后台管理</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
     <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
     <%= csrf_meta_tags %>
   </head>
   <body>
@@ -18,7 +19,7 @@
               <span class="fa fa-bars fa-lg"></span>
             </button>
             <a class="navbar-brand custom-logo-link" href="/">
-              Circles
+              Circles后台管理
             </a>
           </div>
 
@@ -29,11 +30,11 @@
                 <a href="/">Home</a>
               </li>
               <li>
-                <a href="<%= users_path %>">用户</a>
+                <a href="<%= admin_users_path %>">用户管理</a>
               </li>
 
-              <% if session[:user_id] %>
-                <li><%= link_to "#{User.find(session[:user_id]).username}, 退出", session_path(session[:user_id]), method: 'delete' %></li>
+              <% if logged_in? %>
+                <li><%= link_to "#{current_user.username}, 退出", session_path(session[:user_id]), method: 'delete' %></li>
               <% else %>
                 <li><%= link_to "登录", new_session_path %></li>
               <% end -%>
@@ -52,8 +53,5 @@
       
       <%= yield %>
     </div>
-
-  <%= javascript_include_tag 'application' %>
-  <%= yield :javascripts %>
   </body>
 </html>
