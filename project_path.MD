@@ -27,3 +27,15 @@
 gem "bootstrap-sass", "~>3.4.1"
 ````
 在文件夹目录下执行bundle导入
+
+## 3.路由文件 routes.rb
+\circles\config
+
+````
+resources :users
+resources :sessions
+````
+命令行中显示目前路由命令
+````
+rails routes
+````
