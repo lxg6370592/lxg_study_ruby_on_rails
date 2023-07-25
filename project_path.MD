@@ -27,6 +27,7 @@
 gem "bootstrap-sass", "~>3.4.1"
 ````
 在文件夹目录下执行bundle导入
+
 ![Image](https://github.com/lxg6370592/lxg_study_ruby_on_rails/blob/main/image/bundle.png?raw=true) 
 ![Image](https://github.com/lxg6370592/lxg_study_ruby_on_rails/blob/main/image/bundel_end.png?raw=true) 
 
