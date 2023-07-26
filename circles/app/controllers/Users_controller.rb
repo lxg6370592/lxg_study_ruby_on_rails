@@ -21,14 +21,6 @@ class UsersController < ApplicationController
     end
   end
 
-  private
-  def auth_user
-    unless session[:user_id]
-      flash[:notice] = "请登录"
-      redirect_to new_session_path
-    end
-  end
-
   def blogs
     @blogs = current_user.blogs.page(params[:page] || 1).per_page(params[:per_page] || 10)
       .order("id desc")
@@ -36,7 +28,7 @@ class UsersController < ApplicationController
 
   private
   def user_attrs
-    params.require(:user).permit(:username, :password)
+    params.require(:user).permit(:username, :password, :password_confirmation)
   end
 
 end

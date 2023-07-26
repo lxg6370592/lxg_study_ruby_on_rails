@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
     <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%#= stylesheet_link_tag 'welcome' %>
     <%= csrf_meta_tags %>
+    <%= javascript_include_tag "jquery.min" %>
+    <%= javascript_include_tag "jquery_ujs" %>
   </head>
   <body>
     <header name="top">
@@ -32,11 +35,13 @@
                 <a href="<%= users_path %>">用户</a>
               </li>
 
-              <% if session[:user_id] %>
-                <li><%= link_to "#{User.find(session[:user_id]).username}, 退出", session_path(session[:user_id]), method: 'delete' %></li>
+              <% if logged_in? %>
+                <li><%= link_to "#{current_user.username}, 退出", session_path(session[:user_id]), method: 'delete' %></li>
               <% else %>
                 <li><%= link_to "登录", new_session_path %></li>
               <% end -%>
+
+              <li><%= link_to "博客", blogs_path %></li>
             </ul>
           </div>
           <!-- /.navbar-collapse -->

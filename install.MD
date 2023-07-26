@@ -73,3 +73,22 @@ application.scss 中导入 bootstrap
 ````
 @import "bootstrap";
 ````
+## 引入 jquery
+### 1.在项目Gemfile文件中添加
+````
+gem 'jquery-rails'
+````
+### 2.Bundle项目环境命令
+````
+bundle install
+````
+### 3.在app/views/layouts/application.html.erb文件中添加
+````
+<%= javascript_include_tag "jquery.min" %>
+<%= javascript_include_tag "jquery_ujs" %>
+````
+### 4.在app/assets/config/manifest.js文件中添加
+````
+//= link jquery.min.js
+//= link jquery_ujs.js
+````
