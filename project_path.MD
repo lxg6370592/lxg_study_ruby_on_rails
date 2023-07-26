@@ -44,3 +44,13 @@ resources :sessions
 rails routes
 ````
 ![Image](https://github.com/lxg6370592/lxg_study_ruby_on_rails/blob/main/image/routes.png?raw=true) 
+## 4.数据库文件 \circles\config\database.yml
+````
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  host: 127.0.0.1
+  username: root
+  password:
+````
