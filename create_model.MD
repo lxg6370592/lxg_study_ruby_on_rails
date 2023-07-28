@@ -28,6 +28,8 @@ PS：复健的索引要先根据对象依赖关系创建了复健才可以加入
 ![Image](https://github.com/lxg6370592/lxg_study_ruby_on_rails/blob/main/image/blog_model.png?raw=true) 
 ## 6.修改controller文件
 ![Image](https://github.com/lxg6370592/lxg_study_ruby_on_rails/blob/main/image/blog_controller.png?raw=true) 
+
+rails7 filter改为action
 ## 7.生成DB文件
 ````
 rails g migration add_users_password_colum
