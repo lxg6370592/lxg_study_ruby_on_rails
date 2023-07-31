@@ -38,6 +38,7 @@ bundle config mirror.https://rubygems.org https://gems.ruby-china.com
 gem sources --remove https://rubygems.org/
 ````
 ### 5.4再次查看gem源 确保更换成功
+![Image](https://github.com/lxg6370592/lxg_study_ruby_on_rails/blob/main/image/gem_source.png?raw=true) 
 ## 6.安装rails
 ````
 gem install rails
