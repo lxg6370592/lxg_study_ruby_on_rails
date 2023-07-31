@@ -36,6 +36,7 @@ resources :blogs
 rails g migration add_users_password_colum
 ````
 ![Image](https://github.com/lxg6370592/lxg_study_ruby_on_rails/blob/main/image/create_db.png?raw=true) 
+
 运营db迁移命令
 ````
 rails db:migrate
