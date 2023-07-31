@@ -48,6 +48,7 @@ gem install rails
 ````
 rails -v
 ````
+![Image](https://github.com/lxg6370592/lxg_study_ruby_on_rails/blob/main/image/rails_v.png?raw=true) 
 ## 4.安装node.js 和 yarn，创建rails项目时需要。
 <u>https://nodejs.org/en</u>
 ### 7.1查看命令
