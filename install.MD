@@ -1,18 +1,28 @@
 # study ruby on rails
 ## 1.下载rubyinstaller
 <u>https://rubyinstaller.org/downloads/</u>
+
+![Image](https://github.com/lxg6370592/lxg_study_ruby_on_rails/blob/main/image/down.png?raw=true) 
+
 ## 2.安装位置自己指定，其余默认即可。
 ## 3.安装完会弹出如下界面：
+
+![Image](https://github.com/lxg6370592/lxg_study_ruby_on_rails/blob/main/image/insta.png?raw=true) 
+
 选择3，并按回车安装。
 ## 4. win+r打开cmd窗口
 查看ruby
 ````
 ruby -v
 ````
+![Image](https://github.com/lxg6370592/lxg_study_ruby_on_rails/blob/main/image/ruby_v.png?raw=true) 
+
 查看gem
 ````
 gem -v
 ````
+![Image](https://github.com/lxg6370592/lxg_study_ruby_on_rails/blob/main/image/gem_v.png?raw=true) 
+
 ## 5.更换gem源
 ### 5.1 查看gem源
 ````
@@ -43,6 +53,10 @@ rails -v
 node -v
 yarn -v
 ````
+
+![Image](https://github.com/lxg6370592/lxg_study_ruby_on_rails/blob/main/image/node_v.png?raw=true) 
+
+![Image](https://github.com/lxg6370592/lxg_study_ruby_on_rails/blob/main/image/yard_v.png?raw=true) 
 ## 8创建项目
 ````
 rails new 项目名称
@@ -58,7 +72,7 @@ rails s -p 4001
 源文档
 <u>https://www.jianshu.com/p/1aefcb466f7f</u>
 
-## 引入 Bootstrap
+## 9.引入 Bootstrap
 Gemfile添加导入
 ````
 gem "bootstrap-sass", "~>3.4.1"
@@ -73,21 +87,21 @@ application.scss 中导入 bootstrap
 ````
 @import "bootstrap";
 ````
-## 引入 jquery
-### 1.在项目Gemfile文件中添加
+## 10.引入 jquery
+### 10.1 在项目Gemfile文件中添加
 ````
 gem 'jquery-rails'
 ````
-### 2.Bundle项目环境命令
+### 10.2 Bundle项目环境命令
 ````
 bundle install
 ````
-### 3.在app/views/layouts/application.html.erb文件中添加
+### 10.3 在app/views/layouts/application.html.erb文件中添加
 ````
 <%= javascript_include_tag "jquery.min" %>
 <%= javascript_include_tag "jquery_ujs" %>
 ````
-### 4.在app/assets/config/manifest.js文件中添加
+### 10.4 在app/assets/config/manifest.js文件中添加
 ````
 //= link jquery.min.js
 //= link jquery_ujs.js
