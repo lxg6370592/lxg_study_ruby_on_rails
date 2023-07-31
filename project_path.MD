@@ -1,16 +1,16 @@
 # study ruby on rails
 ## 1.MVC代码目录
 \circles\app
-### 1.controllers目录
+### 1.1 controllers目录
 控制器目录
 \circles\app\controllers
-### 2.model目录
+### 1.2 model目录
 模型对象
 \circles\app\models
-### 3.view目录
+### 1.3 view目录
 页面
 \circles\app\views
-#### 3.1 模板目录
+#### 1.3.1 模板目录
 设置公用view模板
 \circles\app\views\layouts
 文件：application.html.erb
@@ -18,7 +18,7 @@
 <%= yield %>
 ````
 使用该标签显示实际view页面
-#### 3.2 静态文件目录
+#### 1.3.2 静态文件目录
 \circles\app\assets
 
 ## 2.引入GEM
