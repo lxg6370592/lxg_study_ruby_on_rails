@@ -10,6 +10,8 @@ systemctl stop docker
 docker run -itd -p 3306:3306 --name=mysql_baron --restart=always --privileged=true -v $PWD/conf:/etc/mysql/conf.d -v $PWD/logs:/logs -v $PWD/datas:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 mysql:latest
 --创建数据库
 CREATE DATABASE wxcomponent CHARACTER SET utf8;
+--启动微信服务
+docker run -d -p 8081:80 --name=wxthird -e MYSQL_ADDRESS=172.18.0.3:3306 -e MYSQL_USERNAME=root -e MYSQL_PASSWORD=123456 -e WX_APPID="wx82e8d2f5774aad47" weixinthird:0.1
 ````
 ## 3.查看容器IP
 ````
